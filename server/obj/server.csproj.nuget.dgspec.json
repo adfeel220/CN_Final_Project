@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\0tony\\unity\\CN_Final_Server-master\\server\\server.csproj": {}
+    "D:\\0tony\\unity\\server\\server.csproj": {}
   },
   "projects": {
-    "D:\\0tony\\unity\\CN_Final_Server-master\\server\\server.csproj": {
+    "D:\\0tony\\unity\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\0tony\\unity\\CN_Final_Server-master\\server\\server.csproj",
+        "projectUniqueName": "D:\\0tony\\unity\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "D:\\0tony\\unity\\CN_Final_Server-master\\server\\server.csproj",
+        "projectPath": "D:\\0tony\\unity\\server\\server.csproj",
         "packagesPath": "C:\\Users\\Tony_Windows\\.nuget\\packages\\",
-        "outputPath": "D:\\0tony\\unity\\CN_Final_Server-master\\server\\obj\\",
+        "outputPath": "D:\\0tony\\unity\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tony_Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -9,7 +9,7 @@ namespace server
         public int health;
         public Vector3 position;
         public Quaternion rotation;
-        public Quaternion upperRotation;
+        public float upperRotation;
         public bool isReady;
         public int score;
         public int deathCount;
@@ -25,11 +25,11 @@ namespace server
             deathCount = 0;
         }
 
-        public void UpdatePositionRotation(Vector3 _position, Quaternion _rotation, Quaternion _upperRotation) {
+        public void UpdatePositionRotation(Vector3 _position, Quaternion _rotation, float _upperRotation) {
             position = _position;
             rotation = _rotation;
             upperRotation = _upperRotation;
-            ServerSend.PositionRotationToAllExcept(this);
+            // ServerSend.PositionRotationToAllExcept(this);
         }
 
         public void UpdateIsReady(bool _isReady) {

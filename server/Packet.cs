@@ -14,6 +14,7 @@ namespace server
         isReadyToAllExcept,
         startGameToAll,
         positionRotationToAllExcept,
+        positionRotationAllUpdate,
         animToAllExceptBool,
         animToAllExceptInt,
         shootToAll,

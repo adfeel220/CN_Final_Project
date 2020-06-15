@@ -163,6 +163,22 @@ namespace server
                 _SendUDPDataToAll(_player.id, _packet);
             }
         }
+
+        public static void PositionRotationAllUpdate()
+        {
+            using (Packet _packet = new Packet((int)ServerPackets.positionRotationAllUpdate)) {
+                for(int i = 1; i <= Server.MaxPlayers; i++) {
+                    if (Server.clients[i].player != null) {
+                        Player player_i = Server.clients[i].player;
+                        _packet.Write(player_i.id);
+                        _packet.Write(player_i.position);
+                        _packet.Write(player_i.rotation);
+                        _packet.Write(player_i.upperRotation);
+                    }
+                }
+                _SendUDPDataToAll(_packet);
+            }
+        }
         #endregion
 
         #endregion

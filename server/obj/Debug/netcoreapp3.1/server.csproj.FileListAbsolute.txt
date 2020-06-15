@@ -1,26 +1,38 @@
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.exe
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.deps.json
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.json
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.dev.json
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.dll
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\bin\Debug\netcoreapp3.1\server.pdb
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.csprojAssemblyReference.cache
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.AssemblyInfoInputs.cache
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.AssemblyInfo.cs
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.dll
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.pdb
-C:\Users\ASUS\Desktop\CN\final\FPS\network\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.exe
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.deps.json
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.json
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.dev.json
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.dll
-D:\0tony\unity\CN_Final_Server-master\server\bin\Debug\netcoreapp3.1\server.pdb
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.csprojAssemblyReference.cache
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.AssemblyInfoInputs.cache
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.AssemblyInfo.cs
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.csproj.CoreCompileInputs.cache
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.dll
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.pdb
-D:\0tony\unity\CN_Final_Server-master\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.exe
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.deps.json
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.runtimeconfig.json
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.runtimeconfig.dev.json
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.dll
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/bin/Debug/netcoreapp3.1/server.pdb
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.csprojAssemblyReference.cache
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.AssemblyInfoInputs.cache
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.AssemblyInfo.cs
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.csproj.CoreCompileInputs.cache
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.dll
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.pdb
+C:/Users/ASUS/Desktop/CN/final/FPS/network/server/obj/Debug/netcoreapp3.1/server.genruntimeconfig.cache
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/bin/Debug/netcoreapp3.1/server.deps.json
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/bin/Debug/netcoreapp3.1/server.runtimeconfig.json
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/bin/Debug/netcoreapp3.1/server.runtimeconfig.dev.json
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/bin/Debug/netcoreapp3.1/server.dll
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/bin/Debug/netcoreapp3.1/server.pdb
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.csprojAssemblyReference.cache
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.AssemblyInfoInputs.cache
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.AssemblyInfo.cs
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.csproj.CoreCompileInputs.cache
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.dll
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.pdb
+/Users/chunzuo/Documents/tony/courses/108-2/Computer Network/final_project/CN_Final_Server-master/server/obj/Debug/netcoreapp3.1/server.genruntimeconfig.cache
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.exe
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.deps.json
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.json
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.runtimeconfig.dev.json
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.dll
+D:\0tony\unity\server\bin\Debug\netcoreapp3.1\server.pdb
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.csprojAssemblyReference.cache
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.AssemblyInfoInputs.cache
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.AssemblyInfo.cs
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.csproj.CoreCompileInputs.cache
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.dll
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.pdb
+D:\0tony\unity\server\obj\Debug\netcoreapp3.1\server.genruntimeconfig.cache

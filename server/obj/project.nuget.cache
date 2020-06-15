@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UVqQ7VSjVT3GOWk6kxS/Xwp2l8CZrq0kkgRhYBqzp4DxrB+4cL3DqrCOkugaFunnreuI1kXoU4abF3ewFCX9yA==",
+  "dgSpecHash": "R9LEQOrievLTvYU7LqGp6RUA3V6lxDbXXmx2TpOPZEevVKo7jrHJy99OYCj0EgBAgp4nDJ1Ivs9SdOZX4H3NGA==",
   "success": true,
-  "projectFilePath": "D:\\0tony\\unity\\CN_Final_Server-master\\server\\server.csproj",
+  "projectFilePath": "D:\\0tony\\unity\\server\\server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -38,7 +38,7 @@ namespace server
         public static void PlayerPositionRotation(int _fromClient, Packet _packet) {
             Vector3 _position = _packet.ReadVector3();
             Quaternion _rotation = _packet.ReadQuaternion();
-            Quaternion _upperRotation = _packet.ReadQuaternion();
+            float _upperRotation = _packet.ReadFloat();
 
             if (Server.clients[_fromClient].player != null) {
                 Server.clients[_fromClient].player.UpdatePositionRotation(_position, _rotation, _upperRotation);

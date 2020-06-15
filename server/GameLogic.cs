@@ -19,6 +19,13 @@ namespace server
         }
         public static void Update() {
             ThreadManager.UpdateMain();
+            
+            if (isGameStarted){
+                ServerSend.PositionRotationAllUpdate();
+                if (currentPlayers == 0) {
+                    Reset();
+                }
+            }
         }
     }
 }
