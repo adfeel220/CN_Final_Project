@@ -76,7 +76,7 @@ namespace server
                 catch (Exception _ex)
                 {
                     Console.WriteLine($"Error receiving TCP data: {_ex}");
-                    RouterServer.clients[id]._Disconnect();
+                    RouterServer.Initialize(id);
                 }
             }
             private bool _HandleData(byte[] _data) {
@@ -118,9 +118,10 @@ namespace server
             }
         }
         private void _Disconnect() {
-            RouterServer.ClientCount--;
             Console.WriteLine($"{tcp.clientSocket.Client.RemoteEndPoint} has disconnected from router server.");
             tcp.Disconnect();
+
+            RouterServer.Initialize(id);
         }
     }
 }

@@ -33,6 +33,23 @@ namespace server
             Console.WriteLine($"Router Server started on {_ip_addr}:{Port}");
         }
 
+        public static void Initialize()
+        {
+            Console.WriteLine("Initialize Router Server");
+            ClientCount = 0;
+            clients.Clear();
+
+            for (int i = 1; i <= MaxPlayers; i++) {
+                clients.Add(i, new RouterServerSideClient(i));
+            }
+        }
+
+        public static void Initialize(int _id)
+        {
+            clients.Remove(_id);
+            clients.Add(_id, new RouterServerSideClient(_id));
+        }
+
         private static void _TCPConnectCallback(IAsyncResult _result) {
             TcpClient _accepted_client = tcpListener.EndAcceptTcpClient(_result);
             tcpListener.BeginAcceptTcpClient(new AsyncCallback(_TCPConnectCallback), null);

@@ -105,11 +105,9 @@ namespace server
                 if (GameLogic.score[_team] >= Constants.WIN_SCORE) {
                     ServerSend.WinToAll(_team);
                     //Restart game
-                    foreach(ServerSideClient _client in Server.clients.Values) {
-                        if (_client.player != null){
-                            _client._Disconnect();
-                        }
-                    }
+                    // RouterServer.Initialize();
+                    // Server.Initialize();
+
                     GameLogic.Reset();
                 }
             }

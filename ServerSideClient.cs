@@ -19,6 +19,7 @@ namespace server
             id = _client_id;
             tcp = new TCP(_client_id);
             udp = new UDP(_client_id);
+            player = null;
         }
 
         public class TCP
@@ -74,7 +75,7 @@ namespace server
                 catch (Exception _ex)
                 {
                     Console.WriteLine($"Error receiving TCP data: {_ex}");
-                    Server.clients[id]._Disconnect();
+                    Server.Initialize(id);
                 }
             }
             private bool _HandleData(byte[] _data) {
@@ -187,6 +188,8 @@ namespace server
                 tcp.Disconnect();
                 udp.Disconnect();
                 ServerSend.KickPlayerToAllExcept(id);
+                
+                Server.Initialize(id);
             }
         }
     }

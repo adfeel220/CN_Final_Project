@@ -170,6 +170,7 @@ namespace server
             using (Packet _packet = new Packet((int)ServerPackets.positionRotationAllUpdate)) {
                 for(int i = 1; i <= Server.MaxPlayers; i++) {
                     if (Server.clients[i].player != null) {
+                        // Console.WriteLine($"Writing position of {i}");
                         Player player_i = Server.clients[i].player;
                         _packet.Write(player_i.id);
                         _packet.Write(player_i.position);
@@ -177,8 +178,8 @@ namespace server
                         _packet.Write(player_i.upperRotation);
                     }
                 }
-                // _SendUDPDataToAll(_packet);
-                _SendTCPDataToAll(_packet);
+                _SendUDPDataToAll(_packet);
+                // _SendTCPDataToAll(_packet);
             }
         }
         #endregion

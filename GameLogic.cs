@@ -20,6 +20,8 @@ namespace server
             for (int i=0; i<2; i++) {
                 score[i] = 0;
             }
+            RouterServer.Initialize();
+            Server.Initialize();
         }
         public static void Update() {
             ThreadManager.UpdateMain();

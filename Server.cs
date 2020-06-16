@@ -50,6 +50,22 @@ namespace server
             }
         }
 
+        public static void Initialize()
+        {
+            Console.WriteLine("Initialize Server");
+            clients.Clear();
+            for (int i = 1; i <= MaxPlayers; i++)
+            {
+                clients.Add(i, new ServerSideClient(i));
+            }
+        }
+
+        public static void Initialize(int _id)
+        {
+            clients.Remove(_id);
+            clients.Add(_id, new ServerSideClient(_id));
+        }
+
         // private static void _TCPConnectCallback(IAsyncResult _result) {
         //     TcpClient _accepted_client = tcpListener.EndAcceptTcpClient(_result);
         //     tcpListener.BeginAcceptTcpClient(new AsyncCallback(_TCPConnectCallback), null);
