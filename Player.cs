@@ -11,6 +11,7 @@ namespace server
         public Quaternion rotation;
         public float upperRotation;
         public bool isReady;
+        public bool isDead;
         public int score;
         public int deathCount;
 
@@ -21,6 +22,7 @@ namespace server
             position = new Vector3(0, 0, 0);
             rotation = Quaternion.Identity;
             isReady = false;
+            isDead = false;
             score = 0;
             deathCount = 0;
         }
@@ -29,6 +31,7 @@ namespace server
             position = _position;
             rotation = _rotation;
             upperRotation = _upperRotation;
+            // Console.WriteLine($"Player {id} Update position to: {position}");
             // ServerSend.PositionRotationToAllExcept(this);
         }
 
@@ -46,6 +49,7 @@ namespace server
     
         public void Respawn() {
             health = 100;
+            isDead = false;
         }
     }
 }

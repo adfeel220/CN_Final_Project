@@ -40,7 +40,9 @@ namespace server
             Quaternion _rotation = _packet.ReadQuaternion();
             float _upperRotation = _packet.ReadFloat();
 
+            // Console.WriteLine($"Player {_fromClient} position packet received");
             if (Server.clients[_fromClient].player != null) {
+                // Console.WriteLine($"Player {_fromClient} position calling update.");
                 Server.clients[_fromClient].player.UpdatePositionRotation(_position, _rotation, _upperRotation);
             }
         }
@@ -67,10 +69,11 @@ namespace server
                 int _hitHealth = -1;
                 if (_hitId != -1) {
                     Player _hitPlayer = Server.clients[_hitId].player;
-                    _hitPlayer.health -= 5;
+                    _hitPlayer.health -= Constants.Damage;
                     // TODO: Handle Death?
-                    if (_hitPlayer.health == 0) {
+                    if (_hitPlayer.health <= 0 && !_hitPlayer.isDead) {
                         _hitPlayer.deathCount += 1;
+                        _hitPlayer.isDead = true;
                     }
                     _hitHealth = _hitPlayer.health;
                 }
@@ -82,7 +85,17 @@ namespace server
         public static void PlayerAddScore(int _fromClient, Packet _packet) {
             if(Server.clients[_fromClient].player != null) {
                 int _team = _packet.ReadInt();
-                int _addScore = _packet.ReadInt();
+                bool _isFinishLine = _packet.ReadBool();
+
+                int _addScore;
+                if (_isFinishLine)
+                {
+                    _addScore = Constants.FinishLineScore;
+                }
+                else
+                {
+                    _addScore = Constants.KillScore;
+                }
 
                 Server.clients[_fromClient].player.score += _addScore;
                 GameLogic.score[_team] += _addScore;
@@ -92,11 +105,11 @@ namespace server
                 if (GameLogic.score[_team] >= Constants.WIN_SCORE) {
                     ServerSend.WinToAll(_team);
                     //Restart game
-                    // foreach(ServerSideClient _client in Server.clients.Values) {
-                    //     if (_client.tcp.clientSocket != null){
-                    //         _client._Disconnect();
-                    //     }
-                    // }
+                    foreach(ServerSideClient _client in Server.clients.Values) {
+                        if (_client.player != null){
+                            _client._Disconnect();
+                        }
+                    }
                     GameLogic.Reset();
                 }
             }

@@ -36,6 +36,7 @@ namespace server
             for (int i = 1; i <= Server.MaxPlayers; i++) {
                 Server.clients[i].udp.SendData(_packet);
             }
+            // Console.WriteLine("Position Update to all players.");
         }
         private static void _SendUDPDataToAll(int _exceptClient, Packet _packet) {
             _packet.WriteLength();
@@ -176,7 +177,8 @@ namespace server
                         _packet.Write(player_i.upperRotation);
                     }
                 }
-                _SendUDPDataToAll(_packet);
+                // _SendUDPDataToAll(_packet);
+                _SendTCPDataToAll(_packet);
             }
         }
         #endregion

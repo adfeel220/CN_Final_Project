@@ -9,6 +9,10 @@ namespace server
         public static int currentPlayers = 0;
         public static bool isGameStarted = false;
         public static int[] score = new int[2];
+
+        private static int timer = 0;
+        private static int frameIncreaseFactor = 1;
+
         public static void Reset() {
             readyPlayers = 0;
             currentPlayers = 0;
@@ -21,7 +25,11 @@ namespace server
             ThreadManager.UpdateMain();
             
             if (isGameStarted){
-                ServerSend.PositionRotationAllUpdate();
+                if (timer == 0){
+                    ServerSend.PositionRotationAllUpdate();
+                }
+                timer = (timer +1) % frameIncreaseFactor;
+
                 if (currentPlayers == 0) {
                     Reset();
 
